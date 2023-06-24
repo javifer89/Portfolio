@@ -1,0 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.container{
+    display:flex;
+    flex-direction: column;
+}
+.icons{
+    font-size: 34px;
+    display: flex;
+    gap:10px;
+
+}
