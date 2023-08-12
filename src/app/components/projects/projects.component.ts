@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Project } from 'src/app/interfaces/project.interface';
 
 @Component({
   selector: 'app-projects',
@@ -6,5 +7,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
+  projects: Project[]
+
+
+
+  constructor() {
+    this.projects = [
+      {
+        img: '',
+        title: 'Hamburguesería',
+        description: 'Proyecto de HTML/CSS para una Hamburguesería',
+        url: ''
+      },
+      {
+        img: '',
+        title: 'Gestor de tareas',
+        description: 'Aplicación web para gestión de tareas con HTML/CSS Y JavaScript',
+        url: ''
+      },
+      {
+        img: '',
+        title: 'Eventia - gestor cultural',
+        description: 'Proyecto fullstack con Angular y Node.js para la creación de un Gestor de espacios culturales',
+        url: ''
+      },
+      {
+        img: '',
+        title: 'Fresaikiwi Fotografia',
+        description: 'Proyecto fullstack con Angular y Node.js para la creación de una página web de un estudio fotográfico',
+        url: ''
+    },
+  ]
+}
+
+
+
+
 
 }
