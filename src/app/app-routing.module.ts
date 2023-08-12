@@ -6,7 +6,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home' },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
