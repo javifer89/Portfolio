@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <nav class="navbar col-12 col-lg-12 d-flex">
+            <ul class= "col-12 col-lg-12 d-flex p-2">
+                <li *ngFor="let item of menuItems" class="nav-item">
+                    <a [routerLink]="item.routes" class="nav-link">{{item.title}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

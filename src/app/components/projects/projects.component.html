@@ -1,0 +1,10 @@
+
+
+<div class="project-detail" *ngFor="let project of projects">
+    <img [src]="project.img" alt="">
+    <h3>{{project.title}}</h3>
+    <p>
+        {{project.description}}
+    </p>
+    <a [href]="project.url">Enlace al proyecto</a>
+</div>
