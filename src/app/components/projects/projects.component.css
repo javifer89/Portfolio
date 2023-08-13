@@ -1,0 +1,19 @@
+.container {
+padding: 10px;
+margin-bottom: 10px;
+}
+.project-detail{
+
+}
+.project-detail a{
+    background-color: var(--azulClaro);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.project-detail a:hover {
+    background-color: var(--colorSecundario);
+
+}

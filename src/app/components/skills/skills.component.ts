@@ -12,42 +12,47 @@ export class SkillsComponent {
   constructor() {
     this.skills = [
       {
-        img: '',
-        title: 'HTML/CSS/BOOTSTRAP',
+        img: '../../../assets/html-css-icons.png',
+        title: 'HTML/CSS',
         description: '',
       },
       {
-        img: '',
+        img: '../../../assets/68747470733a2f2f76352e676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67.png',
+        title: 'Bootstrap',
+        description: '',
+      },
+      {
+        img: '../../../assets/logo-javascript.png',
         title: 'JavaScript',
         description: '',
       },
       {
-        img: '',
+        img: '../../../assets/typescript2034.jpg',
         title: 'TypeScript',
         description: '',
       },
       {
-        img: '',
+        img: '../../../assets/angular-icon-1-logo-png-transparent.png',
         title: 'Angular16',
         description: '',
       },
       {
-        img: '',
-        title: 'Node.js + Express',
+        img: '../../../assets/th.jpg',
+        title: 'Node.js',
         description: '',
       },
       {
-        img: '',
+        img: '../../../assets/Python-logo-notext.svg.png',
         title: 'Python',
         description: 'Automatización IT con Python',
       },
       {
-        img: '',
+        img: '../../../assets/mysql_logo-705x705.png',
         title: 'MySQL',
         description: '',
       },
       {
-        img: '',
+        img: '../../../assets/MongoDB_Logo.svg.png',
         title: 'MongoDB',
         description: '',
       },
