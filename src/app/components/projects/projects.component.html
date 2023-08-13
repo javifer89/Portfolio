@@ -1,4 +1,6 @@
 
+<div class="container">
+    <h2>PROYECTOS</h2>
 
 <div class="project-detail" *ngFor="let project of projects">
     <img [src]="project.img" alt="">
@@ -7,4 +9,5 @@
         {{project.description}}
     </p>
     <a [href]="project.url">Enlace al proyecto</a>
+</div>
 </div>

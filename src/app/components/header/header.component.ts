@@ -27,9 +27,5 @@ export class HeaderComponent {
       title: 'Contacto',
       routes: ['/contact'],
     },
-    {
-      title: 'Sobre mí',
-      routes: ['/about'],
-    },
   ];
 }

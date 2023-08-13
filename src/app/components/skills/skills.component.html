@@ -1,9 +1,12 @@
 
 
-<div class="skills-detail" *ngFor="let skill of skills">
+    <div class="container">
+    <h2>TECNOLOGÍAS</h2>
+    <div class="skills-detail" *ngFor="let skill of skills">
     <img [src]="skill.img" alt="">
     <h3>{{skill.title}}</h3>
     <p>
         {{skill.description}}
     </p>
+</div>
 </div>

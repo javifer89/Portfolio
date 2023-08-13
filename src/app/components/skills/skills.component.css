@@ -1,0 +1,16 @@
+.container{
+    padding: 20px;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.skills-detail{
+    flex-direction: column;
+    width: 15vw;
+    margin: 40px;
+}
+.skills-detail img{
+    width:100%;
+    display: block;
+}
