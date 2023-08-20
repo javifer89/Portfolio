@@ -15,18 +15,6 @@
     color: goldenrod;
     padding: 10px;
 }
-/* .skills-detail{
-
-    margin: 40px;
-    flex-direction: column;
-        width: calc(50% - 80px);
-        margin: 20px;
-        box-sizing: border-box;
-}
-.skills-detail img{
-    width:100%;
-    display: block;
-} */
 
 .skills-detail {
     flex-basis: calc(20.5% - 20px);
