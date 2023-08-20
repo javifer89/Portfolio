@@ -2,7 +2,7 @@
 
   <div class="titulos">
     <h3 class="text-center mb-2">¿Tienes alguna duda?</h3>
-    <h6 class="text-center mb-3">¡Contacta conmigo y te responderé en la mayor brevedad posible!</h6>
+    <h6 class="text-center mb-3">¡Contacta conmigo y te responderé con la mayor brevedad posible!</h6>
   </div>
 
 
@@ -57,22 +57,22 @@
 
     <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
       <mat-form-field>
-        <mat-label>Name</mat-label>
+        <mat-label>Nombre</mat-label>
         <input matInput [formControl]="name" required>
-        <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+        <mat-error *ngIf="name.invalid">Por favor, introduce tu nombre</mat-error>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Email</mat-label>
         <input matInput [formControl]="email" placeholder="email@example.com" required>
-        <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
+        <mat-error *ngIf="email.invalid">Por favor, introduce un e-mail válido</mat-error>
       </mat-form-field>
       <mat-form-field>
-        <mat-label>Message</mat-label>
-        <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput [formControl]="message" maxlength="256" rows="4" placeholder="I'm interested in..." required></textarea>
         <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
-        <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
+        <mat-error *ngIf="message.invalid">Por favor, escribe un mensaje</mat-error>
       </mat-form-field>
-      <button [disabled]="isLoading" class="submit" type="submit">Submit</button>
+      <button [disabled]="isLoading" class="btn submit" type="submit">Enviar</button>
       <input [formControl]="honeypot" class="hidden" type="text" />
       <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
         <span>{{responseMessage}}</span>
