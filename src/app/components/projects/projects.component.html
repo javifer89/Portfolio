@@ -1,13 +1,13 @@
 
 <div class="container">
     <h2>PROYECTOS</h2>
-
-<div class="project-detail" *ngFor="let project of projects">
+    <div class="project-detail" *ngFor="let project of projects">
+    <!-- TODO DECIDIR SI ENVIA A REPOSITORIO , A APP DESPLEGADA O AMPLIA A LIGHTBOX (con descripcion?) -->
     <img [src]="project.img" alt="">
     <h3>{{project.title}}</h3>
-    <p>
+    <!-- <p>
         {{project.description}}
-    </p>
+    </p> -->
     <a [href]="project.url">Enlace al proyecto</a>
 </div>
 </div>

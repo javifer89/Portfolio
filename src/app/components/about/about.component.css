@@ -1,5 +1,25 @@
+
+.container{
+margin-top: 20px;
+
+}
+.about{
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.imagen{
+}
+.imagen img{
+    display: block;
+    object-fit: scale-down;
+    width: 25vw;
+    height: 40vh;
+    border-radius: 20px;
+}
 .skills{
-    display:grid;
-    grid-template-columns: 4fr;
-    grid-template-rows: 2fr;
+margin-top: 20px;
+border: none;
+min-width: 100%;
 }

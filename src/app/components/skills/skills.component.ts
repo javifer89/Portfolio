@@ -9,6 +9,8 @@ import { Skill } from 'src/app/interfaces/skill.interface';
 export class SkillsComponent {
   skills: Skill[];
 
+
+  // TODO REVISAR DESCRIPCIÓN SKILLS
   constructor() {
     this.skills = [
       {
@@ -33,7 +35,7 @@ export class SkillsComponent {
       },
       {
         img: '../../../assets/angular-icon-1-logo-png-transparent.png',
-        title: 'Angular16',
+        title: 'Angular',
         description: '',
       },
       {
@@ -44,7 +46,17 @@ export class SkillsComponent {
       {
         img: '../../../assets/Python-logo-notext.svg.png',
         title: 'Python',
-        description: 'Automatización IT con Python',
+        description: '',
+      },
+      {
+        img: '../../../assets/PHP-logo.svg.png',
+        title: 'PHP',
+        description: '',
+      },
+      {
+        img: '../../../assets/1280px-Laravel.svg.png',
+        title: 'Laravel',
+        description: '',
       },
       {
         img: '../../../assets/mysql_logo-705x705.png',

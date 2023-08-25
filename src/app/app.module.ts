@@ -24,7 +24,7 @@ import { MatInputModule } from "@angular/material/input";
     ProjectsComponent,
     HeaderComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
