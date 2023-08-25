@@ -1,0 +1,25 @@
+
+.container{
+margin-top: 20px;
+
+}
+.about{
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.imagen{
+}
+.imagen img{
+    display: block;
+    object-fit: scale-down;
+    width: 25vw;
+    height: 40vh;
+    border-radius: 20px;
+}
+.skills{
+margin-top: 20px;
+border: none;
+min-width: 100%;
+}

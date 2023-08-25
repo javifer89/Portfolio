@@ -1,0 +1,87 @@
+<div class="container mt-5">
+
+  <div class="titulos">
+    <h3 class="text-center mb-2">¿Tienes alguna duda?</h3>
+    <h6 class="text-center mb-3">¡Contacta conmigo y te responderé con la mayor brevedad posible!</h6>
+  </div>
+
+
+  <div class="row flex-md-row">
+
+    <!-- formulario -->
+    <!-- <div class="col-12 col-md-6 order-md.2">
+      <div class="p-3 mt-3">
+        <h5 class="mb-3">Formulario de contacto.</h5>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+          <div class="input-group mb-3">
+            <span class="input-group-text">Nombre</span>
+            <input type="text" class="form-control" placeholder="Escribe tu nombre" formControlName="nombre">
+
+          </div>
+          <p class="error" *ngIf="checkError('nombre', 'required')">
+            El nombre es obligatorio.
+          </p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            <input type="text" class="form-control" placeholder="Introduce un correo electrónico"
+              formControlName="email">
+
+          </div>
+          <p class="error" *ngIf="checkError('email', 'required')">
+            La dirección e-mail es obligatoria.
+          </p>
+          <p class="error" *ngIf="checkError('email', 'pattern')">
+            La dirección e-mail no tiene un formato válido.
+          </p>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Mensaje</span>
+            <textarea type="text" class="form-control" rows="3" placeholder="Escribe aquí tu mensaje"
+              formControlName="mensaje"></textarea>
+
+          </div>
+
+          <p class="error" *ngIf="checkError('mensaje', 'required')">
+            Tienes que escribir un mensaje.
+          </p>
+          <input type="submit" value="Enviar" class="btn">
+
+        </form>
+      </div>
+
+      <div class="contacto p-3">
+        <p>📱(+34) 665 11 33 18</p>
+        <p>📩 jav.fer.dev@gmail.com</p>
+      </div>
+    </div> -->
+
+    <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput [formControl]="name" required>
+        <mat-error *ngIf="name.invalid">Por favor, introduce tu nombre</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="email" placeholder="email@example.com" required>
+        <mat-error *ngIf="email.invalid">Por favor, introduce un e-mail válido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput [formControl]="message" maxlength="256" rows="4" placeholder="I'm interested in..." required></textarea>
+        <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
+        <mat-error *ngIf="message.invalid">Por favor, escribe un mensaje</mat-error>
+      </mat-form-field>
+      <button [disabled]="isLoading" class="btn submit" type="submit">Enviar</button>
+      <input [formControl]="honeypot" class="hidden" type="text" />
+      <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+        <span>{{responseMessage}}</span>
+      </div>
+    </form>
+
+
+<!-- <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwItkJwk7wFos1By0F2J7IX4sgHVWH5cRK6rIIfvo65eQ1yDpBd3VHLuTxPMXEadOM/exec"></form> -->
+
+  </div>
+
+</div>
