@@ -116,7 +116,7 @@ export class ContactComponent implements OnInit {
         )
         // TODO SOLUCIONAR NAVIGATE A HOME
         .subscribe(() => {
-          this.router.navigate(['/home']); // Moved inside the if block
+          this.router.navigate(['/home']);
         });
     }
   }

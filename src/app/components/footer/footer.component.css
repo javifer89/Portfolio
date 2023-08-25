@@ -4,12 +4,14 @@
     flex-direction: column;
     background-color: var(--azulClaro);
     border-radius: 10px;
-    position: absolute;
+    position: static;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
     align-items: center;
+    margin-top: 20px;
+    padding: 8px;
 }
 .icons{
     font-size: 34px;
@@ -20,4 +22,3 @@
     color: inherit;
     text-decoration: none;
 }
-

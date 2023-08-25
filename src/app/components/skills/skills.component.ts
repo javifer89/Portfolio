@@ -35,7 +35,7 @@ export class SkillsComponent {
       },
       {
         img: '../../../assets/angular-icon-1-logo-png-transparent.png',
-        title: 'Angular16',
+        title: 'Angular',
         description: '',
       },
       {
@@ -46,7 +46,7 @@ export class SkillsComponent {
       {
         img: '../../../assets/Python-logo-notext.svg.png',
         title: 'Python',
-        description: 'Automatización IT con Python',
+        description: '',
       },
       {
         img: '../../../assets/PHP-logo.svg.png',
