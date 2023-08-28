@@ -48,6 +48,7 @@
     border-radius: 25px;
     z-index: -1;
 }
+/* TODO CORREGIR ANCHO DEL ABOUT EN RESPONSIVE SOBRETODO */
 .about {
 margin: 0 auto;
 margin-top: 20px;
@@ -55,8 +56,8 @@ padding: 20px;
 justify-content: center;
 align-items: center;
 text-align: center;
-width: 70%;
-min-width: 50%;
+width: 100%;
+min-width: 100%;
 border: 2px solid goldenrod;
 border-radius: 25px;
 }
@@ -90,4 +91,21 @@ background-color: var(--colorSecundario);
 
 .CV i {
  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        width: 100%;
+    }
+    .about {
+        width: 100%;
+        min-width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+
+
+
+        }
 }
