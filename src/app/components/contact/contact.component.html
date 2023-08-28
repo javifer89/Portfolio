@@ -1,13 +1,12 @@
 <div class="container mt-5">
-
   <div class="titulos">
     <h3 class="text-center mb-2">¿Tienes alguna duda?</h3>
-    <h6 class="text-center mb-3">¡Contacta conmigo y te responderé con la mayor brevedad posible!</h6>
+    <h6 class="text-center mb-3">
+      ¡Contacta conmigo y te responderé con la mayor brevedad posible!
+    </h6>
   </div>
 
-
   <div class="row flex-md-row">
-
     <!-- formulario -->
     <!-- <div class="col-12 col-md-6 order-md.2">
       <div class="p-3 mt-3">
@@ -48,40 +47,63 @@
 
         </form>
       </div>
-
+    </div>
+-->
       <div class="contacto p-3">
         <p>📱(+34) 665 11 33 18</p>
-        <p>📩 jav.fer.dev@gmail.com</p>
+        <a href="mailto:info@javiferdev.com">📩 info@javiferdev.com</a>
       </div>
-    </div> -->
 
-    <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+
+    <form
+      class="contact"
+      [formGroup]="form"
+      method="post"
+      (ngSubmit)="onSubmit()"
+    >
       <mat-form-field>
         <mat-label>Nombre</mat-label>
-        <input matInput [formControl]="name" required>
-        <mat-error *ngIf="name.invalid">Por favor, introduce tu nombre</mat-error>
+        <input matInput [formControl]="name" required />
+        <mat-error *ngIf="name.invalid"
+          >Por favor, introduce tu nombre</mat-error
+        >
       </mat-form-field>
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput [formControl]="email" placeholder="email@example.com" required>
-        <mat-error *ngIf="email.invalid">Por favor, introduce un e-mail válido</mat-error>
+        <input
+          matInput
+          [formControl]="email"
+          placeholder="email@example.com"
+          required
+        />
+        <mat-error *ngIf="email.invalid"
+          >Por favor, introduce un e-mail válido</mat-error
+        >
       </mat-form-field>
       <mat-form-field>
         <mat-label>Mensaje</mat-label>
-        <textarea matInput [formControl]="message" maxlength="256" rows="4" placeholder="I'm interested in..." required></textarea>
-        <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
-        <mat-error *ngIf="message.invalid">Por favor, escribe un mensaje</mat-error>
+        <textarea
+          matInput
+          [formControl]="message"
+          maxlength="999"
+          rows="10"
+          placeholder="I'm interested in..."
+          required
+        ></textarea>
+        <mat-hint align="end"> {{ message.value?.length || 0 }}/999</mat-hint>
+        <mat-error *ngIf="message.invalid"
+          >Por favor, escribe un mensaje</mat-error
+        >
       </mat-form-field>
-      <button [disabled]="isLoading" class="btn submit" type="submit">Enviar</button>
+      <button [disabled]="isLoading" class="btn submit" type="submit">
+        Enviar
+      </button>
       <input [formControl]="honeypot" class="hidden" type="text" />
-      <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
-        <span>{{responseMessage}}</span>
+      <div [ngClass]="!submitted ? 'hidden' : 'visible'" class="center-text">
+        <span>{{ responseMessage }}</span>
       </div>
     </form>
 
-
-<!-- <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwItkJwk7wFos1By0F2J7IX4sgHVWH5cRK6rIIfvo65eQ1yDpBd3VHLuTxPMXEadOM/exec"></form> -->
-
+    <!-- <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwItkJwk7wFos1By0F2J7IX4sgHVWH5cRK6rIIfvo65eQ1yDpBd3VHLuTxPMXEadOM/exec"></form> -->
   </div>
-
 </div>

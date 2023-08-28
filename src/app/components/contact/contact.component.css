@@ -1,16 +1,19 @@
-.btn {
+/* .btn {
     background-color: rgb(28, 146, 179);
     color: var(--blanco);
 }
 
 .btn:hover {
     background-color: rgb(1, 101, 129);
-}
+} */
 
-p {
+a, p {
     font-size: larger;
 }
-
+.contacto {
+	align-items: center;
+	text-align: center;
+}
 .error {
     text-align: left;
     font-size: small;
@@ -18,7 +21,7 @@ p {
 }
 
 
-
+/* TODO REVISAR RESPONSIVE EN MOBILE, ANCHO DEL FORMULARIO */
 
 .hidden {
 	display: none
@@ -32,9 +35,7 @@ p {
 form.contact {
 	display: flex;
 	flex-direction: column;
-	/* max-width: 200px;
-	width: 200px; */
-	width: 25vw;
+	width: 100%;
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -114,9 +115,10 @@ button:hover:enabled{
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 16px;
+	background-color: #007bff;
 	transition: background-color 0.3s ease-in-out;
 }
 
 .btn.submit:hover {
-	background-color: #0056b3;
+	background-color: var(--colorSecundario);
 }
