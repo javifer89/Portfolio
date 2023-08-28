@@ -2,7 +2,8 @@
 .container{
     display:flex;
     flex-direction: column;
-    background-color: var(--azulClaro);
+    background-color: var(--azulCV);
+    color: var(--blanco);
     border-radius: 10px;
     position: static;
     bottom: 0;
