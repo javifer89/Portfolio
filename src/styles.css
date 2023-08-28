@@ -200,9 +200,11 @@ body {
     --naranjaClaro: #F8961E;
     --blanco: #F2F4F3;
     --negroSuave: #333333;
+    --azulCV: #202d47;
+    --azulclaroCV: #dfedf8
 }
 
-html, body { height: 100%; background-color: aliceblue; }
+html, body { height: 100%; background-color: var(--azulclaroCV); }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
