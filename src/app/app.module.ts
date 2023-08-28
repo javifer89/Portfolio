@@ -15,6 +15,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from "@angular/material/input";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,7 @@ import { MatInputModule } from "@angular/material/input";
     HeaderComponent,
     FooterComponent,
     SkillsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import { MatInputModule } from "@angular/material/input";
     HttpClientModule,
     NoopAnimationsModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
