@@ -8,8 +8,8 @@
 :root {
     --negro: #393939;
     /* Tipografía */
-    --tipo-principal: Helvetica, Arial, sans-serif;
-    --tipo-secundaria: Verdana;
+    --tipo-principal: Montserrat sans-serif;
+    --tipo-secundaria: Roboto sans-serif;
 }
 
 /* Las adaptamos al modo oscuro */
@@ -203,9 +203,11 @@ body {
     --azulCV: #202d47;
     --azulclaroCV: #dfedf8
 }
-
+h1,h2,h3,h4,h5,h6, textarea, a{
+    font-family: Montserrat, sans-serif;
+}
+p,span,nav {
+    font-family: Roboto, sans-serif;
+}
 html, body { height: 100%; background-color: var(--azulclaroCV); }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
