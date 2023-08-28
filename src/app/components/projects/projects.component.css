@@ -22,12 +22,11 @@
     text-decoration: underline;
     color: goldenrod;
     padding: 10px;
+/* TODO REVISAR EN RESPONSIVE EL TITULO PARA QUE NO SE QUEDE EN EL TOP */
     position: absolute;
     top:7vh;
     margin-bottom: 10px;
 }
-
-/* TODO REVISAR QUÉ PASA CON EL 3º ELEMENTO */
 
 .project-detail {
      flex-basis: calc(21.5% - 25px);
@@ -74,10 +73,15 @@
 .project-detail img:active {
     transform: scale(1.1);
 }
+
+
 @media (max-width: 768px) {
     .project-detail {
         flex: 0 0 calc(100% - 20px);
         /* flex-basis: calc(100% - 20px); */
-        /* Ocupa todo el ancho disponible con margen */
     }
+        .container h2 {
+            position: inherit;
+            top: none;
+        }
 }
