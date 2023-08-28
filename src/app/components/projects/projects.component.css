@@ -33,6 +33,8 @@
     display: block;
 } */
 
+/* TODO REVISAR RESPONSIVE MOBILE, SALE UNA COLUMNA CON BUEN TAMAÑO Y OTRA MUY PEQUEÑA, HACERLO SOLO CON 1 COLUMNA */
+
 .project-detail {
     flex-basis: calc(20.5% - 20px);
     /* Ajustamos el ancho con margen */
