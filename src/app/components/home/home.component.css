@@ -33,6 +33,7 @@
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
+    zoom: 115%;
 }
 
 /* Opcional: Si deseas agregar un fondo semitransparente */
@@ -44,21 +45,23 @@
     width: 100%;
     height: 100%;
 
-    background-color: rgba(223, 237, 248, 0.5);
+    background-color: rgba(223, 237, 248, 0.4);
     border-radius: 25px;
+    border: solid 2px var(--azulCV);
     z-index: -1;
 }
-/* TODO CORREGIR ANCHO DEL ABOUT EN RESPONSIVE SOBRETODO */
+
 .about {
 margin: 0 auto;
 margin-top: 20px;
+margin-bottom: 30px;
 padding: 20px;
 justify-content: center;
 align-items: center;
 text-align: center;
 width: 100%;
 min-width: 100%;
-border: 2px solid goldenrod;
+border: 2px solid var(--azulCV);
 border-radius: 25px;
 }
 .about p{
@@ -68,10 +71,17 @@ border-radius: 25px;
 }
 .skills{
     margin-top: 15px;
+    margin-bottom: 20px;
 }
-.projects {
-    margin-bottom: 15px;
+
+ .projects{
+position:relative;
+bottom:0;
+margin-bottom: 20px;
+
 }
+
+
 .CV {
     width: 50%;
     background-color: var(--azulCV);
@@ -98,14 +108,19 @@ background-color: var(--colorSecundario);
     .container{
         width: 100%;
     }
+    .hero{
+        background-size: scale-down;
+        zoom: 63%;
+        background-repeat: inherit;
+            background-position: center;
+            border-radius: 25px;
+    }
     .about {
         width: 100%;
         min-width: 80%;
             margin: 0 auto;
             margin-top: 20px;
+            margin-bottom: 30px;
             padding: 20px;
-
-
-
         }
 }
