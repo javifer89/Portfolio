@@ -39,7 +39,7 @@ export class SkillsComponent {
         description: '',
       },
       {
-        img: '../../../assets/th.jpg',
+        img: '../../../assets/th.png',
         title: 'Node.js',
         description: '',
       },
