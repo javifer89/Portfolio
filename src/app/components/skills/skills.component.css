@@ -25,20 +25,15 @@
 
 .skills-detail {
     flex-basis: calc(20.5% - 20px);
-    /* Ajustamos el ancho con margen */
     margin: 10px;
-    /* Reducimos el margen para hacerlo más compacto */
     box-sizing: border-box;
     text-align: center;
     margin-top: 80px;
-    /* Centramos el contenido */
 }
 
 .skills-detail img {
     width: 100%;
     max-width: 80px;
-    /* Limitamos el ancho de la imagen */
     display: block;
     margin: 0 auto 10px;
-    /* Añadimos margen inferior */
 }
