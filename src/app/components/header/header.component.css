@@ -23,6 +23,7 @@
 .navbar ul {
     margin: 0;
     padding: 0px 10px;
+    justify-content: space-evenly;
 }
 .nav-item {
     display: inline-block;
