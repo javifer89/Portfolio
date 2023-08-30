@@ -3,7 +3,7 @@
 }
 
 .about {
-    border: 2px solid goldenrod;
+    border: 2px solid var(--azulCV);
     border-radius: 20px;
     padding: 20px;
     display: flex;
