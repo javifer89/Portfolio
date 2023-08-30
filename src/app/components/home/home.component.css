@@ -20,6 +20,36 @@
     border-radius: 25px;
     object-fit: cover;
 } */
+.welcome {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 35vh;
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+.hero,
+.about {
+    /* flex: 1; */
+    /* Ambos elementos ocuparán el mismo espacio disponible */
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    border-radius: 25px;
+    border: 2px solid var(--azulCV);
+}
+.about {
+    margin: 0 auto;
+    /* ;
+    margin-bottom: 20px;
+    padding: 20px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    border: 2px solid var(--azulCV);
+    border-radius: 25px;
+}
 .hero {
     position: relative;
     /* Cambiado a "relative" para que los elementos internos fluyan dentro */
@@ -27,22 +57,60 @@
     background-image: url('../../../assets/wallpaperflare.com_wallpaper.jpg');
     background-size: cover;
     background-position: center;
+    /* width: 100%; */
+    width: 50%;
+     height: 30.5vh;
+    /* max-height: 30vh; */
+    /* padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+    border-radius: 25px;
+    zoom: 115%;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
     width: 100%;
+    height: 100%;
+
+    background-color: rgba(223, 237, 248, 0.4);
+    border-radius: 25px;
+    border: solid 1px var(--azulCV);
+    z-index: -1;
+}
+
+.about p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/* Opcional: Si deseas agregar un fondo semitransparente */
+/*.hero {
+    position: relative;
+    /* Cambiado a "relative" para que los elementos internos fluyan dentro */
+/* z-index: 1;
+    background-image: url('../../../assets/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+/*   width: 50%;
     height: 50vh;
     /* max-height: 30vh; */
-    padding: 20px;
+/*    padding: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
     zoom: 115%;
 }
 
-/* Opcional: Si deseas agregar un fondo semitransparente */
 .hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+
     height: 100%;
 
     background-color: rgba(223, 237, 248, 0.4);
@@ -52,23 +120,45 @@
 }
 
 .about {
-margin: 0 auto;
-margin-top: 20px;
-margin-bottom: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
 padding: 20px;
 justify-content: center;
 align-items: center;
 text-align: center;
-width: 100%;
+ width: 100%;
+
 min-width: 100%;
 border: 2px solid var(--azulCV);
 border-radius: 25px;
 }
 .about p{
     text-align: justify;
-
-
+} */
+/* TODO REVISAR EL RESPONSIVE PARA QUE NO SOBRESALGA EL BOTÓN DE CV Y CORREGIR EL TAMAÑO DEL TEXTO */
+.CV {
+    width: 50%;
+    background-color: var(--azulCV);
+    color: var(--blanco);
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 3%; */
+    transition: all 0.3s ease-in-out;
 }
+.CV:hover{
+background-color: var(--colorSecundario);
+}
+
+.CV i {
+ font-size: 30px;
+}
+
 .skills{
     margin-top: 15px;
     margin-bottom: 20px;
@@ -82,45 +172,35 @@ margin-bottom: 20px;
 }
 
 
-.CV {
-    width: 50%;
-    background-color: var(--azulCV);
-    color: var(--blanco);
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 20px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-.CV:hover{
-background-color: var(--colorSecundario);
-}
 
-.CV i {
- font-size: 30px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1004px) {
 
     .container{
         width: 100%;
     }
+    .welcome {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 70vh;
+        margin-top: 20px;
+
+    }
     .hero{
-        background-size: scale-down;
-        zoom: 63%;
-        background-repeat: inherit;
+        /* background-size: scale-down;
+            background-repeat: inherit;
             background-position: center;
-            border-radius: 25px;
+        border-radius: 25px; */
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        zoom: 140%;
+
     }
     .about {
         width: 100%;
-        min-width: 80%;
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 30px;
-            padding: 20px;
+
         }
 }
