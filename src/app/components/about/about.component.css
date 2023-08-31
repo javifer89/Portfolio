@@ -25,9 +25,9 @@
     display: block;
     object-fit: scale-down;
     width: 100%;
-    /* height: auto;
-    min-height: 40vh; */
+    height: auto;
     border-radius: 20px;
+    margin-top: 15%;
 }
 .skills {
     margin-top: 20px;
@@ -45,5 +45,6 @@
     .imagen img {
         height: auto;
         width: 100%;
+        margin-top: 0;
     }
 }
