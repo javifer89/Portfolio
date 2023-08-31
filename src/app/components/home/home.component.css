@@ -8,7 +8,8 @@
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    height: 35vh;
+    /* height: 65vh; */
+    /* height: 30%; */
     margin-top: 20px;
     gap: 1rem;
 }
@@ -38,8 +39,10 @@
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 30.5vh;
+    /* height: 30.5vh; */
     /* max-height: 30vh; */
+        height: 100%;
+
     border-radius: 25px;
     zoom: 115%;
 }
@@ -158,7 +161,7 @@ border-radius: 25px;
         display: flex;
         flex-flow: column;
         width: 100%;
-        height: 70vh;
+        height: 100vh;
         margin-top: 20px;
     }
     .hero {
@@ -176,4 +179,5 @@ border-radius: 25px;
     .about {
         width: 100%;
     }
+    
 }
