@@ -6,6 +6,7 @@
     border: 2px solid var(--azulCV);
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-flow: row ;
     width: 100%;
@@ -17,6 +18,7 @@
 }
 
 .texto {
+    margin-top: 40px;
     padding: 10px;
     text-align: justify;
 }
@@ -27,7 +29,8 @@
     width: 100%;
     height: auto;
     border-radius: 20px;
-    margin-top: 15%;
+    margin-top: 11%;
+    margin-bottom: 20px;
 }
 .skills {
     margin-top: 20px;
