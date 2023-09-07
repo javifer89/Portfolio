@@ -14,7 +14,7 @@ export class SkillsComponent {
   constructor() {
     this.skills = [
       {
-        img: '../../../assets/html-css-icons.png',
+        img: '../../../assets/html-css-icons2.png',
         title: 'HTML/CSS',
         description: '',
       },
