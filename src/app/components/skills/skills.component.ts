@@ -18,12 +18,7 @@ export class SkillsComponent {
         title: 'HTML/CSS',
         description: '',
       },
-      {
-        img: '../../../assets/68747470733a2f2f76352e676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67.png',
-        title: 'Bootstrap',
-        description: '',
-      },
-      {
+            {
         img: '../../../assets/logo-javascript.png',
         title: 'JavaScript',
         description: '',
@@ -40,7 +35,12 @@ export class SkillsComponent {
       },
       {
         img: '../../../assets/th.png',
-        title: 'Node.js',
+        title: 'NodeJS',
+        description: '',
+      },
+      {
+        img: '../../../assets/nestjs-icon-2048x2040-3rrvcej8.png',
+        title: 'NestJS',
         description: '',
       },
       {
@@ -48,16 +48,16 @@ export class SkillsComponent {
         title: 'Python',
         description: '',
       },
-      {
-        img: '../../../assets/PHP-logo.svg.png',
-        title: 'PHP',
-        description: '',
-      },
-      {
-        img: '../../../assets/1280px-Laravel.svg.png',
-        title: 'Laravel',
-        description: '',
-      },
+      // {
+      //   img: '../../../assets/PHP-logo.svg.png',
+      //   title: 'PHP',
+      //   description: '',
+      // },
+      // {
+      //   img: '../../../assets/1280px-Laravel.svg.png',
+      //   title: 'Laravel',
+      //   description: '',
+      // },
       {
         img: '../../../assets/mysql_logo-705x705.png',
         title: 'MySQL',
