@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
   ]);
   message: FormControl = new FormControl('', [
     Validators.required,
-    Validators.maxLength(256),
+    Validators.maxLength(999),
   ]);
   honeypot: FormControl = new FormControl(''); // we will use this to prevent spam
   submitted: boolean = false; // show and hide the success message
