@@ -20,7 +20,7 @@ import Swal from 'sweetalert2';
 export class ContactComponent implements OnInit {
   //   contactService = inject(ContactService)
   //   formulario: FormGroup;
-  router: Router = new Router();
+  // router: Router = new Router();
   form: FormGroup;
   name: FormControl = new FormControl('', [Validators.required]);
   email: FormControl = new FormControl('', [
@@ -29,14 +29,14 @@ export class ContactComponent implements OnInit {
   ]);
   message: FormControl = new FormControl('', [
     Validators.required,
-    Validators.maxLength(256),
+    Validators.maxLength(999),
   ]);
   honeypot: FormControl = new FormControl(''); // we will use this to prevent spam
   submitted: boolean = false; // show and hide the success message
   isLoading: boolean = false; // disable the submit button if we're loading
   responseMessage!: string; // the response message to show to the user
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) {
     this.form = this.formBuilder.group({
       name: this.name,
       email: this.email,
@@ -114,7 +114,6 @@ export class ContactComponent implements OnInit {
             return of(error); // You can modify this to return any relevant data
           })
         )
-        // TODO SOLUCIONAR NAVIGATE A HOME
         .subscribe(() => {
           this.router.navigate(['/home']);
         });
