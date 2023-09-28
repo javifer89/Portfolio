@@ -16,28 +16,32 @@ export class ProjectsComponent {
         img: '../../../assets/hamburgueseria-card.png',
         title: "Hamburguesería Rover's ",
         description: 'Proyecto de HTML/CSS para una Hamburguesería',
-        url: 'https://github.com/javifer89/hamburgueseria_Rover-s',
+        url: '',
+        project_url:'https://github.com/javifer89/hamburgueseria_Rover-s'
       },
       {
         img: '../../../assets/Todo-card.png',
         title: 'ToDo App - Gestor de tareas',
         description:
           'Aplicación web para gestión de tareas con HTML/CSS Y JavaScript',
-        url: 'https://github.com/javifer89/app-TODO',
+        url: '',
+        project_url:'https://github.com/javifer89/app-TODO'
       },
       {
         img: '../../../assets/blog-card.png',
         title: 'Blog Id-Bootcamps',
         description:
           'Blog para integrar en una página web, con funcionalidad de filtrado por categorías. Angular, html y css.',
-        url: 'https://github.com/javifer89/blog_idbootcamp',
+        url: '',
+        project_url:'https://github.com/javifer89/blog_idbootcamp'
       },
       {
         img: '../../../assets/EVENTIA-card.png',
         title: 'Eventia - gestor cultural',
         description:
           'Proyecto fullstack con Angular y Node.js para la creación de un Gestor de espacios culturales',
-        url: 'https://github.com/javifer89/Eventia_front',
+        url: '',
+        project_url:'https://github.com/javifer89/Eventia_front'
         // TODO AÑADIR ENLACE A LA APP DESPLEGADA
       },
       {
@@ -45,7 +49,8 @@ export class ProjectsComponent {
         title: 'Fresaikiwi Fotografia',
         description:
           'Proyecto fullstack con Angular y Node.js para la creación de una página web de un estudio fotográfico',
-        url: 'https://github.com/javifer89/fresaikiwi_front',
+        url: 'https://fresaikiwifotografia.com',
+        project_url:'https://github.com/javifer89/fresaikiwi_front'
         // TODO AÑADIR ENLACE A LA APP DESPLEGADA
       },
     ];
